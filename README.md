@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Typescript React Hooks App (CRA) 
+###### Communicates with a Twitter API GCF in order to manage Tweets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Cloud Account Prerequisites:
+- [Google Cloud Console account](https://console.cloud.google.com)
+- [2nd-gen Cloud Function](https://cloud.google.com/functions/docs/2nd-gen/console-quickstart)
+- [Cloud Run API enabled](https://console.cloud.google.com/marketplace/product/google/run.googleapis.com)
 
-## Available Scripts
+### General Knowledge Prerequisites:
+- [Google Cloud IAM privileges & roles](https://cloud.google.com/iam/docs/understanding-roles)
+- [Google Cloud Service Accounts](https://cloud.google.com/run/docs/configuring/service-accounts?hl=en)
+- [Google Cloud Run](https://cloud.google.com/run/docs/quickstarts/deploy-container)
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
+- [Twitter API SDK](https://www.npmjs.com/package/twitter-api-sdk)
+- [Axios](https://axios-http.com/docs/intro)
+- [Axios Hooks](https://www.npmjs.com/package/axios-hooks)
 
-In the project directory, you can run:
+### Local Tool Recommendations:
+- [VSCode](https://code.visualstudio.com/)
+- [NPX](https://www.npmjs.com/package/npx) (npm install -g npx)
+- [NVM](https://github.com/nvm-sh/nvm) (or a similar node manager)
 
-### `npm start`
+#### To test a GCF locally:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **nvm use 16** - Switch to Node 16 (nvm install 16.5.1 if not installed)
+2. **npm install** - Install all node_modules for the React app
+3. **npm start** - Serve the React app locally
+4. **http://localhost:3000/** - Visit the locally served React app
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### Other GCFs
+In order to use this example React app, you'll want to setup the **typescript-twitter-api-google-cloud-function** repository and run it in parallel.

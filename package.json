@@ -1,7 +1,8 @@
 {
   "name": "typescript-react-ui-testing-library-twitter-gcf",
   "version": "1.0.0",
-  "private": true,
+  "description": "An example of a Typescript React App that communicates with a Twitter API GCF in order to manage Tweets.",
+  "author": "Wesley LeMahieu",
   "proxy": "http://localhost:8080/",
   "dependencies": {
     "@emotion/react": "^11.9.3",
